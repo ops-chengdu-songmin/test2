@@ -1,0 +1,27 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ETXlPREE0TURBeE4xb1hEVE15TURNeU5UQTRNREF4TjFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUpoCmloTWRJSDd1MTFrWFd1ak16R1d1ODVFT0dBU21obXNCd3NFTXdWa2c2eUlzNzFrOEYrbXl5eGROOHdaSWtWcW8KSzFleDBNVUx6elZGSEhYSXFDUXFxaDNNRk52aEV5czF1N3FpOGhiMUxzemFkcnIzL1pQZkNmdUpncmVGY0gybwptWDFkaFNSeXJ6RGpoSjFLM0xEZml5aW5tMDBVeE14ZlVNZzFHb0szNDRTeDhpYUdoSXJyaEp0R3VtK0s2em9kClFGSTJkV2FwZmlzUElYYzUzSkwxenB4N2lMWjIzRlZpV3JZR0lQWkZpenRxeDFnbjJlRTBSaCt2MGhRNHdxOHIKMysrM0hPSG82WW9oM3hSbmV3ejNzUGlQS3JJU0Z1d0pvS0RHaEw0OHZuZ0VPOTZKVnB1ZGlGV3ByczNtMkdNeQpPeWNwVXJKTHN1YmVaUDRyWTVrQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZMMUNnemh3QXdnM3g4SXEzaFBvQ2h6NUh0UE5NQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDNW85SU1ETVBvV1F6OVFmd2NZL3lFekpZNVFhblZ1V3hzYnAvWExLc0lURGN4THVvTAoyWGpIemxlVGJQZnh3RDNndTk1a0h0SDBHcFlpZE9sYkdkUEZjYTE0NEs1emQ2RHJmTFVHUW10ZTdvNVRURTBoCk1TSDVFMmhrMUhqLzkwdm1UMmJDNFc3T0NPazNHeElIOFp0V1VSYm05QVgyZmtVUFI3RFU5b1lkdEFIYzZ3cUEKM09KR3A4a3dWY0NXaVBpSkRCeGFnSm5rRnh1VmJabGdVM2NUUkFURW9YY2I5aEducExpc2R3bW5PZ0RvWGtnawpXZ0VZWjhVK3loWEcxNmZjQkl5VVphcUptUllKTmo5eGxudkFqa3J5azdGS0VPSXNiN1JuVVZtNG43b0hBYm9yCnNRMkpOazlwTDF0bGs4eUVyTlJ6MnRwUG03YlBkR0xLaWh3NAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://0F09A73335A7B42D38712B178BB0664B.gr7.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:094258561078:cluster/ava-samo-qa-k8s
+contexts:
+- context:
+    cluster: arn:aws:eks:us-east-1:094258561078:cluster/ava-samo-qa-k8s
+    user: arn:aws:eks:us-east-1:094258561078:cluster/ava-samo-qa-k8s
+  name: arn:aws:eks:us-east-1:094258561078:cluster/ava-samo-qa-k8s
+current-context: arn:aws:eks:us-east-1:094258561078:cluster/ava-samo-qa-k8s
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:us-east-1:094258561078:cluster/ava-samo-qa-k8s
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - ava-samo-qa-k8s
+      command: aws
